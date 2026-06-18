@@ -18,10 +18,11 @@ workflows:
     scripts:
       - name: Get Flutter packages
         script: |
+          flutter clean
           flutter pub get
       - name: Build Android APK Release
         script: |
-          flutter build apk --release --no-shrink
+          flutter build apk --release --no-tree-shake-icons --no-shrink
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
     publishing:
