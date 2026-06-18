@@ -1,4 +1,4 @@
-package com.random.pharmapos
+package com.pharmapos.pro
 
 import io.flutter.embedding.android.FlutterActivity
 
