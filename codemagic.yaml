@@ -6,7 +6,7 @@ workflows:
     environment:
       groups:
         - keystore_credentials
-      flutter: 3.22.0
+      flutter: stable
       java: 17
     triggering:
       events:
